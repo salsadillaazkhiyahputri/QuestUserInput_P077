@@ -56,3 +56,8 @@ fun TopBar(modifier: Modifier = Modifier) {
         )
     )
 }
+
+@Composable
+fun FormPendaftaran(modifier: Modifier) {
+
+     }
