@@ -183,20 +183,41 @@ fun FormPendaftaran(modifier: Modifier) {
                         cursorColor = Color(0xFF388E3C)
                     )
                 )
-
-
-
-
-
+                Button(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(5.dp),
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = Color(0xFF81C784),
+                        contentColor = Color.White
+                    ),
+                    enabled = textAlamat.isNotEmpty() &&
+                            textNama.isNotEmpty() &&
+                            textJK.isNotEmpty() &&
+                            textStatus.isNotEmpty(),
+                    onClick = {
+                        nama = textNama
+                        jenis = textJK
+                        status = textStatus
+                        alamat = textAlamat
+                    }
+                ) {
+                    Text(
+                        stringResource(R.string.submit),
+                        fontFamily = FontFamily.Monospace
+                    )
+                }
             }
-
-            }
-
         }
-
-
-
-
-
-
     }
+}
+
+
+
+
+
+
+
+
+
+
