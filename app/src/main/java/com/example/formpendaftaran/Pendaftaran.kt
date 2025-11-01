@@ -89,6 +89,29 @@ fun FormPendaftaran(modifier: Modifier) {
                 modifier = Modifier.padding(20.dp),
                 verticalArrangement = Arrangement.Top
             ) {
+                Text(
+                    stringResource(R.string.nama).uppercase(),
+                    color = Color(0xFF33691E),
+                    fontFamily = FontFamily.Monospace,
+                    modifier = Modifier.padding(5.dp)
+                )
+                OutlinedTextField(
+                    value = textNama,
+                    singleLine = true,
+                    shape = RoundedCornerShape(6.dp),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(5.dp),
+                    label = { Text(text = "Isian Nama Lengkap", color = Color.Gray) },
+                    onValueChange = { newText -> textNama = newText },
+                    colors = OutlinedTextFieldDefaults.colors(
+                        focusedBorderColor = Color(0xFF81C784),
+                        unfocusedBorderColor = Color(0xFF66BB6A),
+                        cursorColor = Color(0xFF388E3C)
+                    )
+                )
+
+            }
 
             }
 
