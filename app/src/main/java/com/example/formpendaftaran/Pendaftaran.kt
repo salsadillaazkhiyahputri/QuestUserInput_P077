@@ -72,8 +72,15 @@ fun FormPendaftaran(modifier: Modifier) {
     val gender = listOf("Laki-laki", "Perempuan")
     val statusKawin = listOf("Janda", "Lajang", "Duda")
 
+    Box(
+        modifier = modifier
+            .fillMaxSize()
+            .background(color = Color(0xFFF1F8E9))
+    ) {
 
 
 
 
-}
+
+
+    }
