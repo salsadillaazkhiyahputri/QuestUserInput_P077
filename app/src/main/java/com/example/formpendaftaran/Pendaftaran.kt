@@ -178,9 +178,9 @@ fun FormPendaftaran(modifier: Modifier) {
                     label = { Text(text = "Alamat", color = Color.Gray) },
                     onValueChange = { newText -> textAlamat = newText },
                     colors = OutlinedTextFieldDefaults.colors(
-                        focusedBorderColor = Color(0xFF81C784),
-                        unfocusedBorderColor = Color(0xFF66BB6A),
-                        cursorColor = Color(0xFF388E3C)
+                        focusedBorderColor = Color.Black,
+                        unfocusedBorderColor = Color.Black,
+                        cursorColor = Color.Black
                     )
                 )
                 Button(
