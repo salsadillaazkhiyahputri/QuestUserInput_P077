@@ -105,11 +105,11 @@ fun FormPendaftaran(modifier: Modifier) {
                     label = { Text(text = "Isian Nama Lengkap", color = Color.Gray) },
                     onValueChange = { newText -> textNama = newText },
                     colors = OutlinedTextFieldDefaults.colors(
-                        focusedBorderColor = Color(0xFF81C784),
-                        unfocusedBorderColor = Color(0xFF66BB6A),
-                        cursorColor = Color(0xFF388E3C)
+                            focusedBorderColor = Color.Black,
+                            unfocusedBorderColor = Color.Black,
+                            cursorColor = Color.Black
+                        )
                     )
-                )
                 Text(
                     stringResource(R.string.jenis).uppercase(),
                     color = Color(0xFF33691E),
