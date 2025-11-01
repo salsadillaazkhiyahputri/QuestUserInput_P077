@@ -110,6 +110,33 @@ fun FormPendaftaran(modifier: Modifier) {
                         cursorColor = Color(0xFF388E3C)
                     )
                 )
+                Text(
+                    stringResource(R.string.jenis).uppercase(),
+                    color = Color(0xFF33691E),
+                    fontFamily = FontFamily.Monospace,
+                    modifier = Modifier.padding(5.dp)
+                )
+                Column(modifier = Modifier.padding(5.dp)) {
+                    gender.forEach { item ->
+                        Row(
+                            modifier = Modifier.selectable(
+                                selected = textJK == item,
+                                onClick = { textJK = item }
+                            ),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            RadioButton(
+                                selected = textJK == item,
+                                onClick = { textJK = item },
+                                colors = androidx.compose.material3.RadioButtonDefaults.colors(
+                                    selectedColor = Color(0xFF81C784)
+                                )
+                            )
+                            Text(item, color = Color.Black, fontFamily = FontFamily.Monospace)
+                        }
+                    }
+                }
+
 
             }
 
