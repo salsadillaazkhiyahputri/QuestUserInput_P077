@@ -162,6 +162,28 @@ fun FormPendaftaran(modifier: Modifier) {
                         }
                     }
                 }
+                Text(
+                    stringResource(R.string.alamat).uppercase(),
+                    color = Color(0xFF33691E),
+                    fontFamily = FontFamily.Monospace,
+                    modifier = Modifier.padding(5.dp)
+                )
+                OutlinedTextField(
+                    value = textAlamat,
+                    singleLine = true,
+                    shape = RoundedCornerShape(6.dp),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(5.dp),
+                    label = { Text(text = "Alamat", color = Color.Gray) },
+                    onValueChange = { newText -> textAlamat = newText },
+                    colors = OutlinedTextFieldDefaults.colors(
+                        focusedBorderColor = Color(0xFF81C784),
+                        unfocusedBorderColor = Color(0xFF66BB6A),
+                        cursorColor = Color(0xFF388E3C)
+                    )
+                )
+
 
 
 
