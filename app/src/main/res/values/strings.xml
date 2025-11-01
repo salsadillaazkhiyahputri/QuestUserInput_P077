@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FormPendaftaran</string>
+    <string name="nama">Nama Lengkap</string>
+    <string name="jenis">Jenis Kelamin</string>
+    <string name="status">Status Perkawinan</string>
+    <string name="alamat">Alamat</string>
+    <string name="submit">Submit</string>
+
+</resources>
