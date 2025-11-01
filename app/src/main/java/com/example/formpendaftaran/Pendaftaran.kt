@@ -85,7 +85,12 @@ fun FormPendaftaran(modifier: Modifier) {
                 .width(500.dp)
                 .height(670.dp)
         ) {
+            Column(
+                modifier = Modifier.padding(20.dp),
+                verticalArrangement = Arrangement.Top
+            ) {
 
+            }
 
         }
 
