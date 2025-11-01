@@ -77,6 +77,17 @@ fun FormPendaftaran(modifier: Modifier) {
             .fillMaxSize()
             .background(color = Color(0xFFF1F8E9))
     ) {
+        ElevatedCard(
+            elevation = CardDefaults.cardElevation(defaultElevation = 12.dp),
+            colors = CardDefaults.cardColors(containerColor = Color.White), // card putih bersih
+            modifier = Modifier
+                .padding(horizontal = 25.dp, vertical = 15.dp)
+                .width(500.dp)
+                .height(670.dp)
+        ) {
+
+
+        }
 
 
 
